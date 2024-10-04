@@ -22,10 +22,6 @@ const main = async () => {
     const event = txnReceipt.events?.find((event) => event.event === 'Minted');
     const tokenId = event?.args['tokenId'];
   
-    console.log(
-      '🎨 Your minted NFT:',
-      `https://testnets.opensea.io/assets/${nftContract.target}/${tokenId}`
-    );
   };
   
   const runMain = async () => {
